@@ -29,6 +29,7 @@ Future Updates:
 
 References:
 How to host your angular app on heroku: https://betterprogramming.pub/how-to-deploy-your-angular-9-app-to-heroku-in-minutes-51d171c2f0d
+
 How to get a JSON endpoint for your google sheets document: https://www.freecodecamp.org/news/cjn-google-sheets-as-json-endpoint/
 
 
