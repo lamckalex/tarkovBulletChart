@@ -1,0 +1,33 @@
+<div class="form-group">
+    <div class="input-group mb-3">
+        <input #search type="text" class="form-control searchInput" placeholder="Search" 
+            [(ngModel)]="searchText"
+            (focus)="focused = true"
+            (blur)="focused = false"
+        >
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary" (click)="clearSearch()" type="button">
+                <span class="fa fa-trash-o fa-lg" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="table-responsive">
+    <table *ngIf="tableSpec.length > 0" class="table table-dark">
+        <thead class="table-head">
+            <tr>
+                <th *ngFor="let col of tableSpec">
+                    {{col.name}}
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let row of data | searchFilter: searchText:[0,1] ; let j = index">
+                <td *ngFor="let col of row; let i = index" [style]="getStyle(col, i)" (click)="onClick(j,i)">
+                    {{col | sheetsCleanup}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
