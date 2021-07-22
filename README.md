@@ -8,7 +8,7 @@ The idea that behind the project:
 
 I wanted to host this on Heroku, and Heroku does not provide persistent storage.
 I could easily take that data and paste it into JSON file and host it that way, but I wanted the data to be easily copy pastable from the wiki.
-The easiest solution I thought of was to actually host the data on Google Sheets (Which allowed me to easily paste in the data and make updates over time) and then expose google sheets via a JSON API. (Tutorial here: https://www.freecodecamp.org/news/cjn-google-sheets-as-json-endpoint/)
+The easiest solution I thought of was to actually host the data on Google Sheets (Which allowed me to easily paste in the data and make updates over time) and then expose google sheets via a JSON API.
 
 The project was built with Angular, theme is using Bootstrap and Font Awesome.
 
@@ -26,6 +26,11 @@ Future Updates:
 - Allow users to filter by Armor Penetration values (i.e. I only want to see ammo that can penetrate >3 of armor Level 1)
 - Add the search filter value to the URL so users can share/bookmark it 
 - Improve Styling
+
+References:
+How to host your angular app on heroku: https://betterprogramming.pub/how-to-deploy-your-angular-9-app-to-heroku-in-minutes-51d171c2f0d
+How to get a JSON endpoint for your google sheets document: https://www.freecodecamp.org/news/cjn-google-sheets-as-json-endpoint/
+
 
 ## Development server
 
